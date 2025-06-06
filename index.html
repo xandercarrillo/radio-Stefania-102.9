@@ -1,64 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radio Fiesta Online - ¡Sigue la Fiesta!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radio Stefania FM</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(45deg, #ffcc00, #ff6699);
-      color: #fff;
       text-align: center;
-    }
-    header {
+      background: #ffe600;
+      color: #333;
       padding: 20px;
     }
-    header img {
-      max-width: 150px;
-    }
     h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
+      font-size: 2em;
+      margin-bottom: 10px;
     }
-    .player {
-      margin-top: 30px;
-    }
-    audio {
-      width: 80%;
+    iframe {
+      border: none;
+      width: 100%;
       max-width: 400px;
-      margin: 20px auto;
-    }
-    footer {
-      margin-top: 40px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.2);
+      height: 150px;
     }
   </style>
 </head>
 <body>
+  <h1>🎉 Radio Stefania FM</h1>
+  <p>Con Corazon de Mujer</p>
 
-<header>
-  <img src="https://ibb.co/rGwjdkLJ" alt="Logo Stefanía 102.9 FM" />
-  header img {  width: 762px;  height: 284px;  object-fit: contain; /* para que no se deforme */}
-  <h1>🎙️ Stefanía 102.9 FM</h1>
-  <h2>Con Corazón de Mujer</h2>
-</header>
-
-<div class="player">
-  <audio controls autoplay>
-  <source src="http://tuusuario.listen2myradio.com:8000/stream" type="audio/mpeg">
-  Tu navegador no soporta el elemento de audio.
-</audio>
-</div>
-
-<footer>
-  <p>&copy; 2025 Radio Fiesta Online - Todos los derechos reservados.</p>
-</footer>
-
+  <iframe 
+    src="https://fiestaonlineradio.radio12345.com/player" 
+    allow="autoplay">
+  </iframe>
 </body>
 </html>
 
-</body>
-</html>
