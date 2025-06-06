@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stefanía 102.9 FM - Con Corazón de Mujer</title>
   <style>
     body {
@@ -22,13 +22,22 @@
       font-size: 2.5em;
       margin: 10px 0;
     }
+    h2 {
+      font-weight: normal;
+      margin-top: -10px;
+    }
     .player {
       margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
     }
-    audio {
+    audio, video {
       width: 80%;
       max-width: 400px;
-      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
     footer {
       margin-top: 40px;
@@ -40,20 +49,25 @@
 <body>
 
 <header>
-  <img src="https://ibb.co/rGwjdkLJ=LOGO" alt="Logo Stefanía 102.9 FM">
+  <img src="https://ibb.co/rGwjdkLJ" alt="Logo Stefanía 102.9 FM" />
   <h1>🎙️ Stefanía 102.9 FM</h1>
   <h2>Con Corazón de Mujer</h2>
 </header>
 
 <div class="player">
   <audio controls autoplay>
-    <source src="https://tu-stream-url.com/stream" type="audio/mpeg">
+    <source src="https://tu-stream-url.com/stream" type="audio/mpeg" />
     Tu navegador no soporta audio HTML5.
   </audio>
+
+  <video controls autoplay muted>
+    <source src="https://tu-url-de-video.mp4" type="video/mp4" />
+    Tu navegador no soporta video HTML5.
+  </video>
 </div>
 
 <footer>
-  <p>&copy; 2025 Radio Stefanía 102.9 FM - Todos los derechos reservados.</p>
+  <p>&copy; 2025 Stefanía 102.9 FM - Todos los derechos reservados.</p>
 </footer>
 
 </body>
