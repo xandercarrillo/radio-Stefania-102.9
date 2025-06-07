@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radio Stefania FM</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radio Stefania 102.9 FM</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #fef6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d81b60;
+      color: white;
       text-align: center;
-      background: #ffe600;
-      color: #333;
+      padding: 1em;
+    }
+    .eslogan {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: -10px;
+    }
+    .container {
       padding: 20px;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+    .radio-player {
+      text-align: center;
+      margin-bottom: 30px;
     }
-    iframe {
-      border: none;
-      width: 100%;
-      max-width: 400px;
-      height: 150px;
+    .noticias {
+      background: #fff0f5;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .facebook {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .facebook a {
+      background: #3b5998;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>🎉 Radio Stefania FM</h1>
-  <p>Con Corazon de Mujer</p>
 
-  <iframe 
-    src="https://fiestaonlineradio.radio12345.com/player" 
-    allow="autoplay">
-  </iframe>
+  <header>
+    <h1>Radio Stefania 102.9 FM</h1>
+    <div class="eslogan">"Con Corazón de Mujer"</div>
+  </header>
+
+  <div class="container">
+    
+    <div class="radio-player">
+      <h2>Escúchanos en Vivo</h2>
+      <!-- Reproductor de Listen2MyRadio (embed genérico, debes reemplazar si tienes código específico del panel) -->
+      <iframe src="https://newl2mr.listen2myradio.com/player/index.php?autoplay=1" width="300" height="120" frameborder="0" allow="autoplay"></iframe>
+    </div>
+
+    <div class="noticias">
+      <h2>Noticias</h2>
+      <p>Aquí irán las últimas noticias de tu radio, eventos locales, entrevistas y más.</p>
+      <!-- Puedes reemplazar este contenido por un sistema de blog o RSS más adelante -->
+    </div>
+
+    <div class="facebook">
+      <a href="https://facebook.com/RadioStefania102.9" target="_blank">Síguenos en Facebook</a>
+    </div>
+
+  </div>
+
 </body>
 </html>
-
